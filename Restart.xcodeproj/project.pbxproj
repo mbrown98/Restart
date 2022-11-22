@@ -55,9 +55,11 @@
 		323CCB60292D8C230061FED6 /* Restart */ = {
 			isa = PBXGroup;
 			children = (
+				323CCB76292D8E880061FED6 /* Utilities */,
+				323CCB75292D8E770061FED6 /* Views */,
 				323CCB73292D8D910061FED6 /* Sounds */,
 				323CCB61292D8C230061FED6 /* RestartApp.swift */,
-				323CCB63292D8C230061FED6 /* ContentView.swift */,
+				323CCB74292D8E6D0061FED6 /* Screens */,
 				323CCB65292D8C260061FED6 /* Assets.xcassets */,
 				323CCB67292D8C260061FED6 /* Preview Content */,
 			);
@@ -79,6 +81,28 @@
 				323CCB6F292D8D7B0061FED6 /* success.m4a */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		323CCB74292D8E6D0061FED6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				323CCB63292D8C230061FED6 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		323CCB75292D8E770061FED6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		323CCB76292D8E880061FED6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
