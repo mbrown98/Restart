@@ -11,14 +11,31 @@ struct OnboardingView: View {
     // this true value will only be added to the property when the program does not find the ONBOARDING key in app storage
     @AppStorage("onboarding") var isOnboardingViewActive: Bool = true
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Onboarding")
-                .font(.largeTitle)
+        ZStack {
+            Color("ColorBlue")
+                .ignoresSafeArea(.all, edges: .all)
             
-            Button(action: {
-                isOnboardingViewActive = false
-            }) {
-                Text("Start")
+            VStack(spacing: 20) {
+                // HEADER
+                Spacer()
+                VStack(spacing: 0) {
+                    Text("Share.")
+                        .font(.system(size: 60))
+                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                    
+                    Text("""
+                    It's not how much we give but how much we put into giving.
+                    """)
+                        .font(.title3)
+                        .fontWeight(.light)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 10)
+                }
+                // CENTER
+                
+                // FOOTER
             }
         }
     }
