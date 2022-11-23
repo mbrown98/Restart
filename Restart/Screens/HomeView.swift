@@ -14,7 +14,6 @@ struct HomeView: View {
     var body: some View {
         VStack(spacing: 20) {
             // HEADER
-            
             Spacer()
             
             Image("character-2")
@@ -31,7 +30,6 @@ struct HomeView: View {
                 .padding()
             
             // FOOTER
-            
             Spacer()
             
             Button(action: {
